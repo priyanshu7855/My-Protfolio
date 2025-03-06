@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Itim&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Itim&family=Klee+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)), url(background.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    /* backdrop-filter: blur(15px) ; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 3em;
+    letter-spacing: 2px;
+    font-family: "Luckiest Guy", cursive;
+}
+.menu a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 10px 20px;
+    font-size: 25px;
+    position: relative;
+    font-family: "Handlee", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid rgb(128, 105, 0);
+    transition: 0.35s linear;
+}
+
+.menu a:hover::before{
+    width: 90%;
+}
+
+.register a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: rgb(128, 105, 0);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.753) 0px -23px 25px 0px inset, rgba(255, 208, 0, 0.219) 0px -36px 30px 0px inset, rgba(255, 208, 0, 0.1) 0px -79px 40px 0px inset, rgba(255, 208, 0, 0.06) 0px 2px 1px, rgba(255, 208, 0, 0.09) 0px 4px 2px, rgba(255, 208, 0, 0.09) 0px 8px 4px, rgba(255, 208, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: .5s;
+    font-family: "Luckiest Guy", cursive;
+    letter-spacing: 1px;
+}
+.register a:hover{
+    box-shadow: rgba(0, 0, 0, 0.404) 0px 30px 60px -12px inset, rgba(2, 2, 2, 0.295) 0px 18px 36px -18px inset;
+    /* transition: 1s; */
+    background: rgba(255, 208, 0, 0.795);
+    color: black;
+}
+
+.heading{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    font-family: "Itim", cursive;
+}
+
+.heading span{
+    letter-spacing: 5px;
+}
+
+.heading h1{
+    font-size: 3.5em;
+    margin-bottom: 25px;
+}
+.heading a{
+    text-decoration: none;
+    background: rgb(128, 105, 0);
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+.heading a:hover{
+    background: transparent;
+    border: 2px solid rgb(128, 105, 0);
+    transition: .5s;
+}
