@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="logo.jpg">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <div class="container mx-auto min-h-screen flex flex-col items-center justify-center p-4">
+        
+        <!-- App Title -->
+        <h1 class="text-3xl md:text-5xl font-bold mb-6">🎬 Movie Explorer</h1>
+        
+        <!-- Search Box -->
+        <div class="relative w-full max-w-md">
+            <input id="movieInput" type="text" placeholder="Search for a movie..." 
+                class="w-full p-3 rounded-lg text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <ul id="suggestions" class="absolute w-full bg-gray-800 rounded-lg mt-1 shadow-md z-10"></ul>
+        </div>
+        
+        <!-- Search Button -->
+        <button onclick="searchMovie()" class="mt-4 px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-lg font-semibold">🔍 Search</button>
+
+        <!-- Default Section: Before Search -->
+        <div id="defaultContent" class="mt-8 text-center">
+            <h2 class="text-2xl font-bold mb-2">🔥 Trending Movies</h2>
+            <p class="text-gray-400">Discover the latest trending movies...</p>
+            <div id="trendingMovies" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4"></div>
+        </div>
+
+        <!-- Movie Details -->
+        <div id="movieDetails" class="mt-8 w-full max-w-2xl text-center"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
